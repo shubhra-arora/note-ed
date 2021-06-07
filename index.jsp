@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+<link rel="stylesheet" href="animation.css">
 <!-- Required meta tags -->
 <meta charset="utf-8">
 <meta name="viewport"
@@ -32,9 +33,9 @@ body
 	<div class="container">
 		<%@include file="navbar.jsp"%>
 		<br>
+<script src="js/animation.js"></script>
 
-
-			<h1 class="text-uppercase text-center" style = "color: black">Start Taking your notes</h1>
+<h1 class="text-uppercase text-center" style = "color: black">Start taking your notes</h1> 
 
 			<div class="container text-center">
 				<a href="add_notes.jsp" class="btn text-center" style = "color: black">Start here</a>
