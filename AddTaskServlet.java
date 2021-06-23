@@ -28,11 +28,11 @@ public class AddTaskServlet extends HttpServlet{
 		
 		if(f)
 		{
-			session.setAttribute("sucMsg", "Task added successfully");
+			session.setAttribute("success", "added successfully");
 			resp.sendRedirect("task-list.jsp");
 		}
 		else {
-			session.setAttribute("failedMsg" , "Something wrong on server");
+			session.setAttribute("error", "error");
 			System.out.println("task-form.jsp");
 		}
 		
