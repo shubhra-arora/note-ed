@@ -73,6 +73,7 @@
       <th scope="col">ACTION</th>
     </tr>
   </thead>
+  
   <tbody>
     	<%
     	taskDao dao = new taskDao(DBConnect.getConn());
@@ -83,14 +84,16 @@
       <th scope="row"><%=t.getId() %></th>
       <th><%=t.getTask() %></th>
       <td><%=t.getStatus() %></td>
-      <td><a href="edit?id=<%=t.getId() %>" class="btn btn-sm1">EDIT</a>
+      <td><a href="edit_task.jsp?id=<%=t.getId() %>" class="btn btn-sm1">EDIT</a>
       <a href="delete?id=<%=t.getId() %>" class="btn btn-sm2">DELETE</a></td>
     </tr>
+    	
     	<%
     	}
        	%>
 	</tbody>
 	</table>
+	<a href = "task-form.jsp" class = "btn btn-sm2">add task</a>
 	 </div>
 	</div>
 	</div>
